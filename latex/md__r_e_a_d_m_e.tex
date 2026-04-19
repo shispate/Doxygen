@@ -1,0 +1,26 @@
+\chapter{Employee Management System }
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{Employee Management System@{Employee Management System}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+
+
+A C++ project demonstrating inheritance and polymorphism with three employee types.\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Classes}{Classes}}\label{md__r_e_a_d_m_e_autotoc_md1}
+
+\begin{DoxyItemize}
+\item {\bfseries{\doxylink{class_employee}{Employee}}} -\/ Base class. Stores ID, years, hourly rate, and hours worked.
+\item {\bfseries{\doxylink{class_supervisor}{Supervisor}}} -\/ Adds a supervision bonus (1\% per supervised employee).
+\item {\bfseries{\doxylink{class_officer}{Officer}}} -\/ Adds an evilness value to the hourly rate for pay calculation.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{Build \& Run}{Build \& Run}}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make}
+\DoxyCodeLine{./employees}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{Generate Docs}{Generate Docs}}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{doxygen\ doxyConfig}
+
+\end{DoxyCode}
+ Then open {\ttfamily html/\+index.\+html} in your browser. 

@@ -1,0 +1,126 @@
+\doxysection{Employee Class Reference}
+\hypertarget{class_employee}{}\label{class_employee}\index{Employee@{Employee}}
+
+
+Base class for all employee types.  
+
+
+
+
+{\ttfamily \+\#include $<$Employee.\+h$>$}
+
+Inheritance diagram for Employee:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_employee}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \doxymbox{\hyperlink{class_employee_a79556ad700627dba88049f487a34a762}{print}} ()
+\begin{DoxyCompactList}\small\item\em Prints employee info to stdout. \end{DoxyCompactList}\item 
+virtual double \doxymbox{\hyperlink{class_employee_a01c2c44e15434237db28832f6972e960}{calculate\+Pay}} ()
+\begin{DoxyCompactList}\small\item\em Returns hourly\+Rate \texorpdfstring{$\ast$}{*} hours\+Worked. \end{DoxyCompactList}\item 
+\Hypertarget{class_employee_a67c345031cf63f515fb09dc675dee5f3}\label{class_employee_a67c345031cf63f515fb09dc675dee5f3} 
+void {\bfseries anniversary} ()
+\begin{DoxyCompactList}\small\item\em Increments years and applies a 0.\+2\% raise. \end{DoxyCompactList}\item 
+\Hypertarget{class_employee_a003c7bd08c40924e381eb0750cbb906f}\label{class_employee_a003c7bd08c40924e381eb0750cbb906f} 
+{\bfseries Employee} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. Sets all fields to -\/1. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_employee_ad0c935ef9a290a82dcf7865172c90148}{Employee}} (int \doxymbox{\hyperlink{class_employee_a832bbae4ee8a704b917f82c4d497bbac}{ID}}, int \doxymbox{\hyperlink{class_employee_a3e4862d9dfc73becb459a562fa2e25f5}{years}}, double \doxymbox{\hyperlink{class_employee_ac31134abb9b4004fc015e51ef579b069}{hourly\+Rate}}, float \doxymbox{\hyperlink{class_employee_afde35c73d02eb1cfe89e23a80998b42e}{hours\+Worked}})
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_employee_ac31134abb9b4004fc015e51ef579b069}\label{class_employee_ac31134abb9b4004fc015e51ef579b069} 
+double {\bfseries hourly\+Rate}
+\begin{DoxyCompactList}\small\item\em Hourly pay rate. \end{DoxyCompactList}\item 
+\Hypertarget{class_employee_afde35c73d02eb1cfe89e23a80998b42e}\label{class_employee_afde35c73d02eb1cfe89e23a80998b42e} 
+float {\bfseries hours\+Worked}
+\begin{DoxyCompactList}\small\item\em Hours worked this period. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_employee_a832bbae4ee8a704b917f82c4d497bbac}\label{class_employee_a832bbae4ee8a704b917f82c4d497bbac} 
+int {\bfseries ID}
+\begin{DoxyCompactList}\small\item\em Unique employee ID. (I just figured out I can use /\+/\+/\+\texorpdfstring{$<$}{<} instead). \end{DoxyCompactList}\item 
+\Hypertarget{class_employee_a3e4862d9dfc73becb459a562fa2e25f5}\label{class_employee_a3e4862d9dfc73becb459a562fa2e25f5} 
+int {\bfseries years}
+\begin{DoxyCompactList}\small\item\em Years with the company. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for all employee types. 
+
+\label{doc-constructors}
+\Hypertarget{class_employee_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_employee_ad0c935ef9a290a82dcf7865172c90148}\index{Employee@{Employee}!Employee@{Employee}}
+\index{Employee@{Employee}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{Employee()}{Employee()}}
+{\footnotesize\ttfamily \label{class_employee_ad0c935ef9a290a82dcf7865172c90148} 
+Employee::\+\+Employee (\begin{DoxyParamCaption}\item[{int}]{ID}{, }\item[{int}]{years}{, }\item[{double}]{hourly\+Rate}{, }\item[{float}]{hours\+Worked}{}\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{class_employee_a832bbae4ee8a704b917f82c4d497bbac}{ID}} & Unique employee ID. \\
+\hline
+{\em \doxylink{class_employee_a3e4862d9dfc73becb459a562fa2e25f5}{years}} & Years at the company. \\
+\hline
+{\em \doxylink{class_employee_ac31134abb9b4004fc015e51ef579b069}{hourly\+Rate}} & Hourly pay rate. \\
+\hline
+{\em \doxylink{class_employee_afde35c73d02eb1cfe89e23a80998b42e}{hours\+Worked}} & Hours worked this period. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_employee_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_employee_a01c2c44e15434237db28832f6972e960}\index{Employee@{Employee}!calculatePay@{calculatePay}}
+\index{calculatePay@{calculatePay}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{calculatePay()}{calculatePay()}}
+{\footnotesize\ttfamily \label{class_employee_a01c2c44e15434237db28832f6972e960} 
+double Employee::\+calculate\+Pay (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns hourly\+Rate \texorpdfstring{$\ast$}{*} hours\+Worked. 
+
+
+
+Reimplemented in \doxymbox{\hyperlink{class_officer_a1fa1aad39b9e95be7a088990ebf17059}{Officer}}, and \doxymbox{\hyperlink{class_supervisor_aa37daa89523c08b84ae8141299e036f8}{Supervisor}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{class_supervisor_aa37daa89523c08b84ae8141299e036f8}{Supervisor::\+calculate\+Pay()}}, and \doxymbox{\hyperlink{main_8cpp_a9ccea1912d6e2275d5612e294919d113}{run\+Employee\+Tests()}}.
+
+\Hypertarget{class_employee_a79556ad700627dba88049f487a34a762}\index{Employee@{Employee}!print@{print}}
+\index{print@{print}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_employee_a79556ad700627dba88049f487a34a762} 
+void Employee::\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Prints employee info to stdout. 
+
+
+
+Reimplemented in \doxymbox{\hyperlink{class_officer_aeadece05a1a0b7fb29bd412830d2e07a}{Officer}}, and \doxymbox{\hyperlink{class_supervisor_a92483dc9a54904d79b46c6ec4efb3f54}{Supervisor}}.
+
+
+
+Referenced by \doxymbox{\hyperlink{class_officer_aeadece05a1a0b7fb29bd412830d2e07a}{Officer::\+print()}}, \doxymbox{\hyperlink{class_supervisor_a92483dc9a54904d79b46c6ec4efb3f54}{Supervisor::\+print()}}, and \doxymbox{\hyperlink{main_8cpp_a9ccea1912d6e2275d5612e294919d113}{run\+Employee\+Tests()}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_employee_8h}{Employee.\+h}}\item 
+\doxymbox{\hyperlink{_employee_8cpp}{Employee.\+cpp}}\end{DoxyCompactItemize}

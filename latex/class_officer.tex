@@ -1,0 +1,122 @@
+\doxysection{Officer Class Reference}
+\hypertarget{class_officer}{}\label{class_officer}\index{Officer@{Officer}}
+
+
+\doxylink{class_employee}{Employee} subclass with an evilness-\/based pay bonus.  
+
+
+
+
+{\ttfamily \+\#include $<$Officer.\+h$>$}
+
+Inheritance diagram for Officer:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_officer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_officer_aeadece05a1a0b7fb29bd412830d2e07a}{print}} ()
+\begin{DoxyCompactList}\small\item\em Prints officer info including evilness value. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_officer_a1fa1aad39b9e95be7a088990ebf17059}{calculate\+Pay}} ()
+\begin{DoxyCompactList}\small\item\em Returns (hourly\+Rate + evilness) \texorpdfstring{$\ast$}{*} hours\+Worked. \end{DoxyCompactList}\item 
+\Hypertarget{class_officer_a80ac1e36a3f36c3a7e12b5dc9320ad89}\label{class_officer_a80ac1e36a3f36c3a7e12b5dc9320ad89} 
+{\bfseries Officer} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. Sets evilness to 500. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_officer_ac75c45d6e8628606278cb4ce6596f67f}{Officer}} (int \doxymbox{\hyperlink{class_employee_a832bbae4ee8a704b917f82c4d497bbac}{ID}}, int \doxymbox{\hyperlink{class_employee_a3e4862d9dfc73becb459a562fa2e25f5}{years}}, double \doxymbox{\hyperlink{class_employee_ac31134abb9b4004fc015e51ef579b069}{hourly\+Rate}}, float \doxymbox{\hyperlink{class_employee_afde35c73d02eb1cfe89e23a80998b42e}{hours\+Worked}}, double \doxymbox{\hyperlink{class_officer_a63465c5f16e8148e5bc0a3bb4ecd1781}{evilness}})
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries anniversary} ()
+\begin{DoxyCompactList}\small\item\em Increments years and applies a 0.\+2\% raise. \end{DoxyCompactList}\item 
+{\bfseries Employee} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. Sets all fields to -\/1. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_employee_ad0c935ef9a290a82dcf7865172c90148}{Employee}} (int \doxymbox{\hyperlink{class_employee_a832bbae4ee8a704b917f82c4d497bbac}{ID}}, int \doxymbox{\hyperlink{class_employee_a3e4862d9dfc73becb459a562fa2e25f5}{years}}, double \doxymbox{\hyperlink{class_employee_ac31134abb9b4004fc015e51ef579b069}{hourly\+Rate}}, float \doxymbox{\hyperlink{class_employee_afde35c73d02eb1cfe89e23a80998b42e}{hours\+Worked}})
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_officer_a63465c5f16e8148e5bc0a3bb4ecd1781}\label{class_officer_a63465c5f16e8148e5bc0a3bb4ecd1781} 
+double {\bfseries evilness}
+\begin{DoxyCompactList}\small\item\em Added to hourly rate when calculating pay. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries hourly\+Rate}
+\begin{DoxyCompactList}\small\item\em Hourly pay rate. \end{DoxyCompactList}\item 
+float {\bfseries hours\+Worked}
+\begin{DoxyCompactList}\small\item\em Hours worked this period. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_employee}{Employee} subclass with an evilness-\/based pay bonus. 
+
+\label{doc-constructors}
+\Hypertarget{class_officer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_officer_ac75c45d6e8628606278cb4ce6596f67f}\index{Officer@{Officer}!Officer@{Officer}}
+\index{Officer@{Officer}!Officer@{Officer}}
+\doxysubsubsection{\texorpdfstring{Officer()}{Officer()}}
+{\footnotesize\ttfamily \label{class_officer_ac75c45d6e8628606278cb4ce6596f67f} 
+Officer::\+\+Officer (\begin{DoxyParamCaption}\item[{int}]{ID}{, }\item[{int}]{years}{, }\item[{double}]{hourly\+Rate}{, }\item[{float}]{hours\+Worked}{, }\item[{double}]{evilness}{}\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{class_employee_a832bbae4ee8a704b917f82c4d497bbac}{ID}} & Unique employee ID. \\
+\hline
+{\em \doxylink{class_employee_a3e4862d9dfc73becb459a562fa2e25f5}{years}} & Years at the company. \\
+\hline
+{\em \doxylink{class_employee_ac31134abb9b4004fc015e51ef579b069}{hourly\+Rate}} & Hourly pay rate. \\
+\hline
+{\em \doxylink{class_employee_afde35c73d02eb1cfe89e23a80998b42e}{hours\+Worked}} & Hours worked this period. \\
+\hline
+{\em \doxylink{class_officer_a63465c5f16e8148e5bc0a3bb4ecd1781}{evilness}} & Bonus added to hourly rate for pay calculation. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_officer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_officer_a1fa1aad39b9e95be7a088990ebf17059}\index{Officer@{Officer}!calculatePay@{calculatePay}}
+\index{calculatePay@{calculatePay}!Officer@{Officer}}
+\doxysubsubsection{\texorpdfstring{calculatePay()}{calculatePay()}}
+{\footnotesize\ttfamily \label{class_officer_a1fa1aad39b9e95be7a088990ebf17059} 
+double Officer::\+calculate\+Pay (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns (hourly\+Rate + evilness) \texorpdfstring{$\ast$}{*} hours\+Worked. 
+
+
+
+Reimplemented from \doxymbox{\hyperlink{class_employee_a01c2c44e15434237db28832f6972e960}{Employee}}.
+
+\Hypertarget{class_officer_aeadece05a1a0b7fb29bd412830d2e07a}\index{Officer@{Officer}!print@{print}}
+\index{print@{print}!Officer@{Officer}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_officer_aeadece05a1a0b7fb29bd412830d2e07a} 
+void Officer::\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Prints officer info including evilness value. 
+
+
+
+Reimplemented from \doxymbox{\hyperlink{class_employee_a79556ad700627dba88049f487a34a762}{Employee}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_officer_8h}{Officer.\+h}}\item 
+\doxymbox{\hyperlink{_officer_8cpp}{Officer.\+cpp}}\end{DoxyCompactItemize}
